@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers as C;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('/crash', C\CrashController::class);
+Route::resource('/no-crash', C\NoCrashController::class);
