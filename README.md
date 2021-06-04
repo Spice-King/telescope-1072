@@ -1,3 +1,9 @@
+# Telescope Exception Test Case
+
+A minimal test case for showing laravel/telescope#1072. Use `docker-compose up -d` to quickly get it running, as it will do everything automatically.
+
+Visit http://localhost:8000/crash and http://localhost:8000/no-crash
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
