@@ -1,0 +1,10 @@
+version: '2.4'
+services:
+    swoole:
+        build:
+            context: .
+        volumes:
+            - ./:/var/www/html
+        ports:
+            - 8000:8000
+        command: sh -c "composer install && touch database.sqlite && php artisan migrate && php artisan telescope:publish && exec php artisan octane:start --host=0.0.0.0"
